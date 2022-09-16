@@ -16,7 +16,5 @@ This system is an outcome of the Summer Internship 2022, done at the department 
 
 
 © 2022 [Dept. of ECE](http://www.tezu.ernet.in/delect/)
-
-Created by [Poulastha Mukherjee](http://www.linkedin.com/in/poulastha-mukherjee-5a8554229/) under the supervision of [Dr. Rupam Goswami](http://www.rupamgoswami.com/p/brief-profile.html)
-
+Created by [Poulastha Mukherjee](http://www.linkedin.com/in/poulastha-mukherjee-5a8554229/) under the supervision of [Dr. Rupam Goswami](http://www.rupamgoswami.com/p/brief-profile.html)=
 Duration of the Internship : Aug 2022 - Sept 2022
