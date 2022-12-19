@@ -23,4 +23,4 @@ Duration of the Internship : Aug 2022 - Sept 2022
 
 
 ## Site Link
-https://www.tezu.ernet.in/delect/EDFIMS%20ECE%20WebApp/index.php
+http://www.tezu.ernet.in/delect/EDFIMS/
