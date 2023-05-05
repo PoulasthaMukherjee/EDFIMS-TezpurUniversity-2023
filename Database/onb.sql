@@ -74,7 +74,7 @@ CREATE TABLE IF NOT EXISTS `notices` (
   `notice` varchar(255) NOT NULL, 
   `file` varchar(255) NOT NULL, 
   `date` varchar(30) NOT NULL, 
-  `access` varchar(255) NOT NULL, 
+  `access` varchar(30) NOT NULL, 
   PRIMARY KEY (`id`) 
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 
