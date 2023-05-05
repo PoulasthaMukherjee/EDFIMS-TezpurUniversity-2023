@@ -8,7 +8,7 @@
   $notice=$_POST['notice'];
   $title=$_POST['title'];
   $date=date('d-M-Y');
-  $access=$_POST['access'];
+  $access = implode(",", $_POST['access']);
   if($notice==NULL || $title==NULL || $access==NULL)
   {
   	//Do Nothing
