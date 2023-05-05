@@ -67,15 +67,15 @@ CREATE TABLE IF NOT EXISTS `faculty` (
 -- Table structure for table `notices`
 --
 
-DROP TABLE IF EXISTS `notices`;
-CREATE TABLE IF NOT EXISTS `notices` (
-  `id` int(255) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) NOT NULL,
-  `notice` varchar(255) NOT NULL,
-  `file` varchar(255) NOT NULL,
-  `date` varchar(30) NOT NULL,
-  `access` varchar(30) NOT NULL,
-  PRIMARY KEY (`id`)
+DROP TABLE IF EXISTS `notices`; 
+CREATE TABLE IF NOT EXISTS `notices` ( 
+  `id` int(255) NOT NULL AUTO_INCREMENT, 
+  `title` varchar(255) NOT NULL, 
+  `notice` varchar(255) NOT NULL, 
+  `file` varchar(255) NOT NULL, 
+  `date` varchar(30) NOT NULL, 
+  `access` varchar(255) NOT NULL, 
+  PRIMARY KEY (`id`) 
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
