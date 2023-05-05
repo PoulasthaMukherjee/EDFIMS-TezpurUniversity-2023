@@ -85,7 +85,19 @@ function MM_validateForm() { //v4.0
 <hr />
 </td></tr>
 <tr><td colspan="2" class="info"><?php echo $info;?></td></tr>
-<tr><td class="labels">Share With</td><td><select name="access" class="fields"><option disabled="disabled" selected="selected">- Select Faculty - </option><?php while($row = mysqli_fetch_array($result)):;?><option><?php echo $row[1];?></option><?php endwhile;?></select></td></tr>
+<tr>
+  <td class="labels">Share With</td>
+  <td>
+    <select name="access[]" class="fields" multiple>
+      <option disabled="disabled" selected="selected">- Select Faculty - </option>
+      <?php while($row = mysqli_fetch_array($result)):;?>
+        <option value="<?php echo $row[0];?>"><?php echo $row[1];?></option>
+      <?php endwhile;?>
+    </select>
+  </td>
+</tr>
+
+
 <tr><td></td></tr>
 <tr><td class="labels">Title</td><td><input name="title" type="text" class="fields" id="title" placeholder="Enter Title" size="45" /></td></tr>
 <tr><td></td></tr>
