@@ -6,12 +6,12 @@
 		header("location:index.php");
 	}
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>View Uploads</title>
-<link href="scripts\styleASL.css" rel="stylesheet" type="text/css" />
+<link href="scripts/styleASL.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -27,10 +27,13 @@
 	<th>Date</th>
 </tr>
 <?php
-	$email=$_SESSION['email'];
-	$name=mysqli_fetch_array(mysqli_query($poulastha,"SELECT name FROM faculty WHERE email='$email'"))['name'];
-	$sql=mysqli_query($poulastha,"SELECT * FROM notices WHERE access = '$name' ORDER BY id DESC");
-	while($a=mysqli_fetch_array($sql))
+	$email = $_SESSION['email'];
+	$facultyIdQuery = mysqli_query($poulastha, "SELECT id FROM faculty WHERE email = '$email'");
+	$facultyId = mysqli_fetch_assoc($facultyIdQuery)['id'];
+	
+	$sql = mysqli_query($poulastha, "SELECT * FROM notices WHERE FIND_IN_SET('$facultyId', access) ORDER BY id DESC");
+	
+	while($a = mysqli_fetch_array($sql))
 	{
 ?>
 <tr class="info">
